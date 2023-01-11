@@ -1,0 +1,18 @@
+
+RewriteEngine On
+
+#The lines below is below is needed if you have admin panel
+#Remove the # sign to uncomment 
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+
+# RewriteRule ^admin$ index.php?url=admin_dashboard [L]
+# RewriteRule ^admin\/$ index.php?url=admin_dashboard [L]
+
+# RewriteRule ^admin\/(.*)$ index.php?url=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
