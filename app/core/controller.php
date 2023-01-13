@@ -63,10 +63,10 @@ Class Controller
 	 */
 	protected function template($content, $data=[])
 	{
-		include "app/views/include/header.inc.php";
-		include "app/views/include/nav.inc.php";
+		include "app/views/includes/header.inc.php";
+		include "app/views/includes/nav.inc.php";
 		include ($content);
-		include "app/views/include/footer.inc.php";
+		include "app/views/includes/footer.inc.php";
 	}
 	
 }
