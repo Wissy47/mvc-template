@@ -83,7 +83,7 @@ Class Database
 				$this->row_count = $stm->rowCount();
 				return $data;
 			}
-			return false;
+			return NULL;
 		}else
 		{
 			return false;
